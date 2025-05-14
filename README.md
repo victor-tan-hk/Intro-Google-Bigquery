@@ -1,2 +1,2 @@
-# Intro-Google-Bigquery
-Introduction to Google BigQuery SQL workshop
+# Introduction to Google BigQuery
+Deriv May 2025
