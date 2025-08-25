@@ -1,2 +1,2 @@
 # Introduction to Google BigQuery
-Deriv May 2025
+Deriv Aug 2025
