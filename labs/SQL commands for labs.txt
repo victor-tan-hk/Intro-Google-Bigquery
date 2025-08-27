@@ -144,6 +144,8 @@ Create a GoogleSQL query that counts the number of unique or distinct values in 
 
 How many unique or distinct regions are there ? 
 
+Provide a simpler and more concise version of your previous explanation
+
 Explain step by step what the query below does for each row and each column in the table samplesales
 SELECT COUNT(DISTINCT Region) AS Total_Regions 
 FROM first_dataset.samplesales;
@@ -156,16 +158,17 @@ SELECT * FROM first_dataset.samplesales ORDER BY FirstName;
 
 SELECT ProdCategory, Price FROM first_dataset.samplesales ORDER BY price DESC;
 
-SELECT * FROM first_dataset.samplesales 
-ORDER BY 
-LastName ASC, FirstName DESC;
+SELECT LastName, FirstName FROM first_dataset.samplesales 
+ORDER BY LastName ASC, FirstName DESC;
+
 
 SELECT CustID, Price, Units, Price*Units AS Total_Price
 FROM first_dataset.samplesales
 ORDER BY Total_Price DESC;
 
-SELECT * FROM first_dataset.samplesales 
+SELECT CustID, Date FROM first_dataset.samplesales 
 ORDER BY Date;
+
 
 SELECT ProdCategory, Units 
 FROM first_dataset.samplesales
@@ -361,6 +364,7 @@ WHERE DATE BETWEEN '2024-01-01' AND '2025-01-01';
 
 ++++ 9.1	Refining queries with aggregate functions for column details
 
+**** This below will not work ****
 SELECT CustID, FirstName, LastName, Max(Price) AS HighestPrice
 FROM first_dataset.samplesales
 WHERE State = 'Kedah';
